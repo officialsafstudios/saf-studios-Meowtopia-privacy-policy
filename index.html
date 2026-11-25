@@ -1,0 +1,1444 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | SAF Studios — Meowtopia: Kitty Sudoku</title>
+  <meta name="description" content="Official privacy policy for Meowtopia: Kitty Sudoku by SAF Studios. Learn how local game data and Google AdMob advertising data are handled.">
+  <meta name="theme-color" content="#f8fafc">
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --bg-alt: #f1f5f9;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --text-muted: #334155;
+      --text-faint: #64748b;
+      --line: #e2e8f0;
+      --line-subtle: #f1f5f9;
+      --primary: #0284c7;
+      --primary-hover: #0369a1;
+      --primary-light: #e0f2fe;
+      --primary-faint: #f0f9ff;
+      --accent: #38bdf8;
+      --radius: 20px;
+      --radius-sm: 14px;
+      --radius-pill: 9999px;
+      --shadow-sm: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+      --shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+      --shadow-hover: 0 10px 28px -4px rgba(15, 23, 42, 0.1), 0 4px 10px -2px rgba(15, 23, 42, 0.05);
+      --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      overflow-x: hidden;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 88px;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(circle at 50% -10%, rgba(224, 242, 254, 0.7), transparent 36rem),
+        radial-gradient(circle at 92% 18%, rgba(240, 249, 255, 0.8), transparent 30rem);
+      background-repeat: no-repeat;
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    :focus-visible {
+      outline: 3px solid rgba(2, 132, 199, 0.6);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 100;
+      padding: 10px 18px;
+      border-radius: var(--radius-pill);
+      background: var(--surface);
+      color: var(--primary-hover);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transform: translateY(-150%);
+      transition: transform 180ms ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    /* HEADER */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      transition: background-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .header-inner {
+      width: min(1180px, calc(100% - 32px));
+      min-height: 72px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+      text-decoration: none;
+    }
+
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      flex: 0 0 auto;
+      object-fit: contain;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .brand-fallback {
+      display: none;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.03em;
+    }
+
+    .brand-copy {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .brand-name {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.03em;
+    }
+
+    .brand-name em {
+      color: var(--primary);
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    .brand-sub {
+      margin-top: 3px;
+      color: var(--text-faint);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    /* PRIMARY NAVIGATION */
+    .primary-nav {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .primary-nav a {
+      position: relative;
+      padding: 8px 16px;
+      border-radius: var(--radius-pill);
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 160ms ease, background-color 160ms ease;
+    }
+
+    .primary-nav a:hover {
+      color: var(--primary);
+      background: var(--primary-faint);
+    }
+
+    .primary-nav a[aria-current="page"] {
+      color: var(--primary-hover);
+      background: var(--primary-light);
+      font-weight: 700;
+    }
+
+    .nav-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-toggle span {
+      position: relative;
+      display: block;
+      width: 18px;
+      height: 2px;
+      margin: 11px auto;
+      border-radius: 999px;
+      background: currentColor;
+      transition: background 180ms ease;
+    }
+
+    .nav-toggle span::before,
+    .nav-toggle span::after {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      background: currentColor;
+      content: "";
+      transition: transform 180ms ease;
+    }
+
+    .nav-toggle span::before {
+      top: -6px;
+    }
+
+    .nav-toggle span::after {
+      top: 6px;
+    }
+
+    .site-header.nav-open .nav-toggle span {
+      background: transparent;
+    }
+
+    .site-header.nav-open .nav-toggle span::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    .site-header.nav-open .nav-toggle span::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 96px 20px 64px;
+      text-align: center;
+    }
+
+    .hero-content {
+      position: relative;
+      width: min(900px, 100%);
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 18px;
+      padding: 6px 14px;
+      border: 1px solid #bae6fd;
+      border-radius: var(--radius-pill);
+      background: var(--primary-faint);
+      color: var(--primary);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--primary);
+      content: "";
+    }
+
+    h1, h2, h3, h4, p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+      font-size: clamp(2.2rem, 6vw, 4.8rem);
+      line-height: 1.05;
+      font-weight: 850;
+      color: var(--text);
+      letter-spacing: -0.04em;
+      word-break: break-word;
+    }
+
+    h2 {
+      font-size: clamp(1.85rem, 4vw, 2.75rem);
+      line-height: 1.1;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.04em;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 750;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0 0 20px;
+      color: var(--primary);
+      font-size: clamp(1.25rem, 3vw, 1.85rem);
+      font-weight: 750;
+      letter-spacing: -0.03em;
+    }
+
+    .intro {
+      max-width: 680px;
+      margin: 0 auto 34px;
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 34px;
+    }
+
+    .meta-card,
+    .policy-card,
+    .contact-card,
+    .summary-card {
+      border: 1px solid var(--line);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .meta-card {
+      padding: 20px;
+      border-radius: var(--radius-sm);
+      text-align: left;
+    }
+
+    .meta-card span,
+    .contact-card span {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--text-faint);
+      font-size: 0.72rem;
+      font-weight: 750;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .meta-card strong {
+      font-size: 1.05rem;
+      font-weight: 750;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 24px;
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, border-color 160ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+    }
+
+    .button-primary {
+      color: #ffffff;
+      background: var(--primary);
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28);
+    }
+
+    .button-primary:hover {
+      background: var(--primary-hover);
+      box-shadow: 0 6px 18px rgba(2, 132, 199, 0.36);
+    }
+
+    .button-secondary {
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: var(--surface);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .button-secondary:hover {
+      border-color: #cbd5e1;
+      background: #f8fafc;
+      box-shadow: var(--shadow);
+    }
+
+    /* POLICY SECTION */
+    .policy {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 72px 0 96px;
+    }
+
+    .section-heading {
+      max-width: 740px;
+      margin-bottom: 40px;
+    }
+
+    .section-heading p:last-child {
+      margin-bottom: 0;
+      color: var(--text-muted);
+      font-size: 1.08rem;
+      line-height: 1.7;
+    }
+
+    .policy-layout {
+      display: grid;
+      grid-template-columns: 270px minmax(0, 1fr);
+      gap: 36px;
+      align-items: start;
+      min-width: 0;
+      max-width: 100%;
+    }
+
+    /* TABLE OF CONTENTS */
+    .toc {
+      position: sticky;
+      top: 96px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow-sm);
+      min-width: 0;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    .toc h3 {
+      margin-bottom: 12px;
+      color: var(--text-faint);
+      font-size: 0.74rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .toc nav {
+      display: grid;
+      gap: 4px;
+    }
+
+    .toc a {
+      display: flex;
+      gap: 10px;
+      padding: 8px 12px;
+      border-radius: 10px;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 140ms ease, background-color 140ms ease, transform 140ms ease;
+    }
+
+    .toc a span {
+      color: var(--text-faint);
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+    }
+
+    .toc a:hover {
+      color: var(--primary);
+      background: var(--primary-faint);
+      transform: translateX(2px);
+    }
+
+    /* POLICY CARDS */
+    .policy-content {
+      display: grid;
+      gap: 22px;
+      min-width: 0;
+      max-width: 100%;
+    }
+
+    .policy-card {
+      overflow: hidden;
+      min-width: 0;
+      max-width: 100%;
+      border-radius: var(--radius);
+      transition: box-shadow 180ms ease;
+    }
+
+    .policy-card:hover {
+      box-shadow: var(--shadow-hover);
+    }
+
+    .policy-card::before {
+      display: block;
+      height: 3px;
+      background: linear-gradient(90deg, #38bdf8, #0284c7);
+      content: "";
+    }
+
+    .card-head {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 24px 28px 0;
+    }
+
+    .section-number {
+      display: inline-grid;
+      width: 40px;
+      height: 40px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid #bae6fd;
+      border-radius: 12px;
+      background: var(--primary-faint);
+      color: var(--primary);
+      font-size: 0.86rem;
+      font-weight: 800;
+    }
+
+    .card-body {
+      padding: 20px 28px 28px 84px;
+    }
+
+    .card-body p {
+      margin-bottom: 16px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .card-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-body ul,
+    .card-body ol {
+      margin: 0 0 18px;
+      padding-left: 22px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .card-body li + li {
+      margin-top: 8px;
+    }
+
+    .card-body strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .notice {
+      margin: 0 0 18px;
+      padding: 14px 18px;
+      border: 1px solid #bae6fd;
+      border-radius: 14px;
+      background: var(--primary-faint);
+      color: #0369a1;
+      font-size: 0.94rem;
+    }
+
+    .storage-table-wrap {
+      overflow-x: auto;
+      margin: 0 0 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #ffffff;
+    }
+
+    table {
+      width: 100%;
+      min-width: 620px;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    th,
+    td {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--bg-alt);
+      color: var(--text);
+      font-size: 0.74rem;
+      font-weight: 750;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    td {
+      color: var(--text-muted);
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    code {
+      padding: 3px 6px;
+      border-radius: 6px;
+      background: #f1f5f9;
+      color: #0f172a;
+      border: 1px solid #e2e8f0;
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.88em;
+    }
+
+    .ad-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin: 0 0 18px;
+    }
+
+    .ad-item {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: #f8fafc;
+    }
+
+    .ad-item h4 {
+      margin: 0 0 8px;
+      color: var(--text);
+      font-size: 0.96rem;
+      font-weight: 750;
+    }
+
+    .ad-item p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      line-height: 1.6;
+    }
+
+    /* CONTACT SECTION */
+    .contact {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 0 0 96px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .contact-card {
+      padding: 26px;
+      border-radius: var(--radius);
+      transition: box-shadow 180ms ease;
+    }
+
+    .contact-card:hover {
+      box-shadow: var(--shadow-hover);
+    }
+
+    .contact-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--text);
+      font-size: 1.12rem;
+      letter-spacing: -0.02em;
+    }
+
+    .contact-card p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .email-link {
+      display: inline-flex;
+      color: var(--primary);
+      font-weight: 700;
+      text-decoration: none;
+      transition: color 160ms ease;
+    }
+
+    .email-link:hover {
+      color: var(--primary-hover);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    /* FOOTER */
+    .site-footer {
+      border-top: 1px solid var(--line);
+      background: #ffffff;
+      padding: 34px 20px;
+      color: var(--text-faint);
+      font-size: 0.9rem;
+    }
+
+    .footer-inner {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 140ms ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 900px) {
+      .policy-layout {
+        grid-template-columns: 1fr;
+        min-width: 0;
+        max-width: 100%;
+      }
+
+      .toc {
+        position: static;
+        overflow: hidden;
+        min-width: 0;
+        max-width: 100%;
+      }
+
+      .toc nav {
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        min-width: 0;
+        max-width: 100%;
+        padding-bottom: 6px;
+        scrollbar-width: thin;
+      }
+
+      .toc a {
+        flex: 0 0 auto;
+        white-space: nowrap;
+      }
+
+      .ad-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: block;
+      }
+
+      .primary-nav {
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 16px;
+        display: none;
+        width: min(260px, calc(100vw - 32px));
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: var(--shadow-hover);
+      }
+
+      .site-header.nav-open .primary-nav {
+        display: flex;
+      }
+
+      .primary-nav a {
+        padding: 10px 14px;
+      }
+
+      .brand-sub {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 64px;
+      }
+
+      .meta-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card-head {
+        padding: 22px 20px 0;
+      }
+
+      .card-body {
+        padding: 16px 20px 24px;
+      }
+
+      .section-number {
+        width: 36px;
+        height: 36px;
+      }
+
+      .policy,
+      .contact {
+        width: min(100% - 24px, 1180px);
+      }
+
+      .policy {
+        padding-top: 50px;
+      }
+
+      .contact {
+        padding-bottom: 64px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .brand-name {
+        font-size: 1rem;
+      }
+
+      .hero-actions .button {
+        width: 100%;
+      }
+
+      .footer-inner {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#privacy">Skip to privacy policy</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="SAF Studios home">
+        <img class="brand-logo" src="saf-logo.jpg" alt="SAF Studios logo" width="44" height="44" onerror="this.style.display='none';">
+        <span class="brand-copy">
+          <span class="brand-name">SAF <em>Studios</em></span>
+          <span class="brand-sub">Official Website</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#privacy" aria-current="page">Privacy Policy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="privacy-title">
+      <div class="hero-content">
+        <p class="eyebrow">Official SAF Studios Website</p>
+        <h1 id="privacy-title">Privacy Policy</h1>
+        <p class="subtitle">Meowtopia: Kitty Sudoku</p>
+        <p class="intro">
+          This policy explains how SAF Studios handles information in the Android game
+          Meowtopia: Kitty Sudoku, including locally stored gameplay data and data processed
+          by Google advertising services.
+        </p>
+
+        <div class="meta-grid">
+          <div class="meta-card">
+            <span>Effective date</span>
+            <strong>November 25, 2026</strong>
+          </div>
+          <div class="meta-card">
+            <span>Last updated</span>
+            <strong>November 25, 2026</strong>
+          </div>
+          <div class="meta-card">
+            <span>Platform</span>
+            <strong>Android</strong>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#privacy">Read the policy</a>
+          <a class="button button-secondary" href="#contact">Contact us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="policy" id="privacy" aria-labelledby="policy-page-title">
+      <div class="section-heading">
+        <p class="eyebrow">Legal &amp; Privacy</p>
+        <h2 id="policy-page-title">How Meowtopia handles your data</h2>
+        <p>
+          The game is designed for local puzzle play. SAF Studios does not operate player
+          accounts, cloud saves, or a server-side profile system in the current version.
+          Advertising services integrated into the game may process device and advertising
+          data as described below.
+        </p>
+      </div>
+
+      <div class="policy-layout">
+        <aside class="toc" aria-label="Privacy policy sections">
+          <h3>On this page</h3>
+          <nav>
+            <a href="#introduction"><span>01</span>Introduction</a>
+            <a href="#information-we-collect"><span>02</span>Information We Collect</a>
+            <a href="#information-stored"><span>03</span>Stored on Device</a>
+            <a href="#advertising"><span>04</span>Advertising &amp; AdMob</a>
+            <a href="#third-party"><span>05</span>Third-Party Services</a>
+            <a href="#how-we-use"><span>06</span>How We Use Information</a>
+            <a href="#data-sharing"><span>07</span>Data Sharing</a>
+            <a href="#data-security"><span>08</span>Data Security</a>
+            <a href="#retention"><span>09</span>Retention &amp; Deletion</a>
+            <a href="#children"><span>10</span>Children's Privacy</a>
+            <a href="#your-rights"><span>11</span>Your Privacy Rights</a>
+            <a href="#changes"><span>12</span>Policy Changes</a>
+            <a href="#policy-contact"><span>13</span>Contact Us</a>
+          </nav>
+        </aside>
+
+        <div class="policy-content">
+          <article class="policy-card" id="introduction">
+            <div class="card-head">
+              <span class="section-number">01</span>
+              <h3>Introduction</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                SAF Studios (“we,” “our,” or “us”) developed Meowtopia: Kitty Sudoku for Android.
+                This Privacy Policy explains what information is handled when you use the game
+                and contact us through this website.
+              </p>
+              <p>
+                The current version of the game does not require an account, player profile,
+                payment details, or cloud backup. Most gameplay information is generated and
+                stored locally on your device.
+              </p>
+              <p>
+                This policy distinguishes information handled by SAF Studios from information
+                handled by third-party services. The most significant third-party service used
+                by the game is Google Mobile Ads / AdMob.
+              </p>
+              <p>
+                This policy applies to Meowtopia: Kitty Sudoku and this SAF Studios privacy
+                page. It does not cover third-party advertising landing pages, other apps, or
+                websites that you may open from an advertisement.
+              </p>
+            </div>
+          </article>
+
+          <article class="policy-card" id="information-we-collect">
+            <div class="card-head">
+              <span class="section-number">02</span>
+              <h3>Information We Collect</h3>
+            </div>
+            <div class="card-body">
+              <p><strong>Information you choose to provide.</strong></p>
+              <ul>
+                <li>If you contact us by email, we receive the email address and message contents you choose to send.</li>
+                <li>The game does not ask you to create an account or provide your name, contacts, photos, microphone input, camera input, or precise location.</li>
+              </ul>
+              <p><strong>Gameplay information generated on your device.</strong></p>
+              <ul>
+                <li>The game stores puzzle progress, completed levels, star ratings, settings, and in-progress board state locally.</li>
+                <li>SAF Studios does not operate a server that receives your saved boards or gameplay progress.</li>
+              </ul>
+              <p><strong>Advertising and device information.</strong></p>
+              <ul>
+                <li>Google Mobile Ads SDK may collect or process device identifiers, IP address, approximate location, app and device information, advertising interactions, and diagnostic data as described in the Advertising and Google AdMob section.</li>
+                <li>That advertising data is handled by Google and its advertising partners under their own policies, not as SAF Studios account data.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="policy-card" id="information-stored">
+            <div class="card-head">
+              <span class="section-number">03</span>
+              <h3>Information Stored on Your Device</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                The game uses Android SharedPreferences to store the following information
+                locally on your device. These records are not uploaded to SAF Studios.
+              </p>
+              <div class="storage-table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Stored information</th>
+                      <th>Purpose</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code>whisker_grid_active_level</code></td>
+                      <td>Remembers which level you were playing.</td>
+                    </tr>
+                    <tr>
+                      <td><code>whisker_grid_save_lvl_&lt;level&gt;</code></td>
+                      <td>Saves an unfinished board, including level number, grid size, placed cats, X marks, hearts, timestamp, and rewarded-ad usage flags.</td>
+                    </tr>
+                    <tr>
+                      <td><code>whisker_grid_reward_life_lvl_&lt;level&gt;</code> and <code>whisker_grid_reward_retry_lvl_&lt;level&gt;</code></td>
+                      <td>Tracks whether a rewarded Extra Life or Extra Retry was already used for a level.</td>
+                    </tr>
+                    <tr>
+                      <td><code>whisker_grid_completed_levels</code> and <code>whisker_grid_stars</code></td>
+                      <td>Stores completed levels and earned star ratings.</td>
+                    </tr>
+                    <tr>
+                      <td><code>whisker_grid_sound_enabled</code>, <code>whisker_grid_music_enabled</code>, and <code>whisker_grid_haptics_enabled</code></td>
+                      <td>Stores your sound, music, and haptic feedback preferences.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                These storage keys are implementation details and may change in future app
+                versions. Clearing the app's data or uninstalling the app removes this local
+                information.
+              </p>
+            </div>
+          </article>
+
+          <article class="policy-card" id="advertising">
+            <div class="card-head">
+              <span class="section-number">04</span>
+              <h3>Advertising and Google AdMob</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                Meowtopia: Kitty Sudoku displays ads through the Google Mobile Ads SDK.
+                The SDK initializes when the app starts and requests ads over the internet.
+                SAF Studios does not add your name, email address, saved puzzle boards, or
+                star ratings to ad requests.
+              </p>
+              <div class="ad-grid">
+                <div class="ad-item">
+                  <h4>Banner ads</h4>
+                  <p>Adaptive banner ads may appear on the gameplay screen.</p>
+                </div>
+                <div class="ad-item">
+                  <h4>Interstitial ads</h4>
+                  <p>Full-screen ads may appear after eligible gameplay events such as level completion, replay, next-level navigation, restart, or game-over retry, subject to frequency limits.</p>
+                </div>
+                <div class="ad-item">
+                  <h4>Rewarded ads</h4>
+                  <p>Rewarded ads appear only when you choose features such as Extra Life, Extra Retry, or Hint.</p>
+                </div>
+              </div>
+              <p>
+                Depending on your device, region, ad availability, and Google settings, the
+                Google Mobile Ads SDK may collect or process:
+              </p>
+              <ul>
+                <li>IP address and approximate location derived from network information.</li>
+                <li>Device and app information, such as device model, operating system version, app version, and language settings.</li>
+                <li>Advertising identifiers, including the Android advertising ID where available and permitted.</li>
+                <li>Ad impressions, clicks, views, interactions, and the advertisements shown to you.</li>
+                <li>Diagnostic, crash, performance, and fraud-prevention information.</li>
+              </ul>
+              <p>
+                Google may use this information to deliver ads, measure ad performance,
+                prevent fraud and abuse, provide analytics, and personalize ads where permitted
+                and enabled. Google may share information with advertisers, ad networks, ad
+                exchanges, demand partners, and measurement providers under its own policies.
+              </p>
+              <p>
+                You can review or reset advertising preferences through Google Ads Settings
+                and Android advertising controls where available. Ads may also include
+                privacy choices supplied by Google or the advertiser.
+              </p>
+              <p>
+                The current version of the app does not provide a separate SAF Studios
+                advertising personalization toggle.
+              </p>
+            </div>
+          </article>
+
+          <article class="policy-card" id="third-party">
+            <div class="card-head">
+              <span class="section-number">05</span>
+              <h3>Third-Party Services</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>Google Mobile Ads / AdMob.</strong> Google provides the advertising
+                SDK used by the game. Google's Privacy Policy and advertising controls apply
+                to data processed by Google's advertising services.
+              </p>
+              <p>
+                <strong>Advertisers and ad partners.</strong> Ads may be supplied by Google
+                demand partners, advertisers, ad networks, exchanges, or measurement providers.
+                Those parties may process information under their own privacy policies.
+              </p>
+              <p>
+                <strong>External links.</strong> Tapping an ad may open an advertiser's website
+                or another external destination. SAF Studios is not responsible for the data
+                practices of those external services.
+              </p>
+              <p>
+                <strong>Device capability checks.</strong> The haptics package may query Android
+                device information to determine whether the device supports vibration. This
+                information is used locally and is not transmitted to SAF Studios.
+              </p>
+              <p>
+                The current version of the game does not include a SAF Studios analytics SDK,
+                crash-reporting SDK, social login SDK, cloud-save SDK, or in-app purchase
+                service. The Google Mobile Ads plugin includes WebView components used to
+                render advertising content.
+              </p>
+            </div>
+          </article>
+
+          <article class="policy-card" id="how-we-use">
+            <div class="card-head">
+              <span class="section-number">06</span>
+              <h3>How We Use Information</h3>
+            </div>
+            <div class="card-body">
+              <p>SAF Studios uses information for the following purposes:</p>
+              <ul>
+                <li>To save and restore unfinished puzzle boards.</li>
+                <li>To remember completed levels, star ratings, and progression.</li>
+                <li>To remember sound, music, and haptic feedback preferences.</li>
+                <li>To enforce once-per-level rewarded-ad benefits where applicable.</li>
+                <li>To respond to privacy questions and other messages sent to our contact email.</li>
+              </ul>
+              <p>
+                Google and its advertising partners use advertising-related information for
+                the purposes described in the Advertising and Google AdMob section.
+              </p>
+            </div>
+          </article>
+
+          <article class="policy-card" id="data-sharing">
+            <div class="card-head">
+              <span class="section-number">07</span>
+              <h3>Data Sharing</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                SAF Studios does not sell your local gameplay information and does not share
+                saved puzzle boards, level progress, or settings with advertisers through its
+                own code.
+              </p>
+              <p>
+                If you email us, we may use and retain that correspondence only as needed to
+                respond to you and operate the studio. We may disclose information if required
+                by law or necessary to protect SAF Studios, users, or others.
+              </p>
+              <p>
+                Google and its advertising partners may share advertising-related information
+                as described in their own policies.
+              </p>
+            </div>
+          </article>
+
+          <article class="policy-card" id="data-security">
+            <div class="card-head">
+              <span class="section-number">08</span>
+              <h3>Data Security</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                Local gameplay data is stored through Android's app-private storage mechanisms.
+                Access is controlled by the Android operating system and the security of your
+                device.
+              </p>
+              <p>
+                Advertising requests and related communications are handled by Google Mobile
+                Ads and Google services under Google's security practices. No method of
+                transmission or storage is completely secure, and SAF Studios cannot guarantee
+                absolute security.
+              </p>
+            </div>
+          </article>
+
+          <article class="policy-card" id="retention">
+            <div class="card-head">
+              <span class="section-number">09</span>
+              <h3>Data Retention and Deletion</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                Local gameplay data remains on your device until it is overwritten by gameplay,
+                removed by an in-app reset, cleared through Android settings, or deleted when
+                you uninstall the app.
+              </p>
+              <ul>
+                <li>Completing a level clears that level's saved board state and active-level marker.</li>
+                <li>Restarting or retrying a level can clear the current saved board state.</li>
+                <li>The Settings option called Reset Progress clears completed-level and star records.</li>
+                <li>Rewarded-ad usage flags may remain for unfinished levels until the level is completed or app data is cleared.</li>
+              </ul>
+              <p>
+                To delete all locally stored game data, open Android Settings, select Apps,
+                choose Meowtopia: Kitty Sudoku, then clear the app's storage or uninstall the
+                app.
+              </p>
+              <p>
+                SAF Studios does not maintain a server-side copy of your gameplay progress, so
+                there is no SAF Studios account data to delete. For advertising data processed
+                by Google, use Google's advertising controls or contact Google under its own
+                privacy policies.
+              </p>
+            </div>
+          </article>
+
+          <article class="policy-card" id="children">
+            <div class="card-head">
+              <span class="section-number">10</span>
+              <h3>Children's Privacy</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                Meowtopia: Kitty Sudoku does not ask children or adults to provide personal
+                information such as a name, email address, or account credentials.
+              </p>
+              <p>
+                The game may display ads through Google Mobile Ads. Google's advertising SDK
+                may process device and advertising identifiers as described above. Parents and
+                guardians should supervise children's use of apps that display advertising.
+              </p>
+              <p>
+                If SAF Studios learns that a child has directly provided personal information
+                to us, we will take reasonable steps to delete it. Advertising data processed by
+                Google is handled under Google's policies and controls.
+              </p>
+            </div>
+          </article>
+
+          <article class="policy-card" id="your-rights">
+            <div class="card-head">
+              <span class="section-number">11</span>
+              <h3>Your Privacy Rights</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                Because most game data is stored locally, you can delete it through Android's
+                app settings or by uninstalling the game.
+              </p>
+              <p>
+                Depending on your jurisdiction, you may have rights to request access to,
+                correction of, or deletion of personal information that SAF Studios holds, such
+                as information contained in an email you send us. Contact us using the details
+                below and we will respond subject to applicable law.
+              </p>
+              <p>
+                For advertising identifiers and ad personalization data controlled by Google,
+                use Google Ads Settings, Android advertising controls, or Google's own privacy
+                processes.
+              </p>
+            </div>
+          </article>
+
+          <article class="policy-card" id="changes">
+            <div class="card-head">
+              <span class="section-number">12</span>
+              <h3>Changes to This Privacy Policy</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                We may update this Privacy Policy when the game, advertising integrations,
+                legal requirements, or our practices change.
+              </p>
+              <p>
+                The updated policy will be posted on this page with a revised effective or
+                last-updated date. Please review this page periodically.
+              </p>
+            </div>
+          </article>
+
+          <article class="policy-card" id="policy-contact">
+            <div class="card-head">
+              <span class="section-number">13</span>
+              <h3>Contact Us</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                For privacy questions, advertising questions, or requests concerning information
+                held by SAF Studios, contact us at:
+              </p>
+              <p>
+                <strong>SAF Studios</strong><br>
+                Meowtopia: Kitty Sudoku<br>
+                <a class="email-link" href="mailto:official.safstudios@gmail.com">official.safstudios@gmail.com</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">SAF Studios</h2>
+        <p>
+          Reach the studio for questions about Meowtopia: Kitty Sudoku, privacy,
+          advertising, or app support.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span>Studio</span>
+          <strong>SAF Studios</strong>
+          <p>Independent game development studio.</p>
+        </div>
+        <div class="contact-card">
+          <span>Game</span>
+          <strong>Meowtopia: Kitty Sudoku</strong>
+          <p>Android puzzle game.</p>
+        </div>
+        <div class="contact-card">
+          <span>Email</span>
+          <strong><a class="email-link" href="mailto:official.safstudios@gmail.com">official.safstudios@gmail.com</a></strong>
+          <p>We read studio and privacy inquiries sent to this address.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© <span id="year">2026</span> SAF Studios. All rights reserved.</span>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#contact">Contact</a>
+        <a href="mailto:official.safstudios@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.querySelector('.site-header');
+    const navToggle = document.querySelector('.nav-toggle');
+    const primaryNav = document.querySelector('.primary-nav');
+
+    function closeNav() {
+      header.classList.remove('nav-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+
+    navToggle.addEventListener('click', () => {
+      const isOpen = header.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    primaryNav.addEventListener('click', (event) => {
+      if (event.target.closest('a')) {
+        closeNav();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        closeNav();
+      }
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!header.contains(event.target) && header.classList.contains('nav-open')) {
+        closeNav();
+      }
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
